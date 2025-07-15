@@ -35,3 +35,5 @@ Upload your locked PDF, set the number of digits, and start the brute force. Use
 1. Flask
 2. pikepdf
 3. tqdm
+
+## Note: I have also provided you the example locked pdf for testing, password for that file is '12345'
