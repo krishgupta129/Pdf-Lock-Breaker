@@ -37,3 +37,5 @@ Upload your locked PDF, set the number of digits, and start the brute force. Use
 3. tqdm
 
 ## Note: I have also provided you the example locked pdf for testing, password for that file is '12345'
+
+⚠️ Disclaimer: This tool is intended for educational and personal use only. Use it only on PDF files that you own or have explicit permission to unlock. The developer is not responsible for any misuse or illegal activity performed using this application.
