@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Unlocker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 PDF Unlocker</h1>
+
+    <form id="pdfForm">
+      <label for="pdfFile">Upload Locked PDF:</label>
+      <input type="file" id="pdfFile" accept=".pdf" required />
+
+      <label for="digits">Number of Digits:</label>
+      <input type="number" id="digits" value="8" min="1" max="10" required />
+
+      <button type="submit">Start</button>
+    </form>
+
+    <div id="controls" class="hidden">
+      <button id="pauseBtn">Pause</button>
+      <button id="stopBtn">Stop</button>
+    </div>
+
+    <div id="progressContainer" class="hidden">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <p id="progressText">Waiting to start...</p>
+      <p id="currentCombo" style="text-align: center; font-size: 1.1rem;"></p>
+    </div>
+
+    <div id="result"></div>
+
+    <div id="downloadContainer">
+      <a href="#" class="download-btn disabled" id="downloadLink" disabled>
+        <i class="fa-solid fa-download"></i> Download Unlocked PDF
+      </a>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
